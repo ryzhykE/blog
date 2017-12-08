@@ -22,6 +22,7 @@
                     <div class="list-group-item">
                         <p>E-mail : {{ $comment->email }}</p>
                         <p>Comment : {{ $comment->body }}</p>
+                        <p>Date : {{ $comment->created_at->format('d.m.Y \a\t H:i') }}</p>
                     </div>
                 @endforeach
             @endif
