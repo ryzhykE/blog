@@ -29,3 +29,8 @@ Route::post('/', [
     'uses' => 'CommentsController@store',
     'as' => 'post.create'
 ]);
+
+//
+//Route::get('/{vue?}', function() {
+//    return view('welcome');
+//})->where('vue', '^(?!.*api).*$[\/\w\.-]*');

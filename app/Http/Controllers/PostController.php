@@ -19,9 +19,7 @@ class PostController extends Controller
         $posts = Post::orderBy('created_at','desc')->paginate(Config::get('setting.paginate'));
         $title = 'Last posts';
         return view('home')->withPosts($posts)->withTitle($title);
-//        return response()->json([
-//            'blogs' => $blogs
-//        ]);
+//        return response()->json([$posts]);
     }
 
     /**
